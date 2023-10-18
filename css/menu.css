@@ -1,0 +1,138 @@
+/*  Stili generali di pagina */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 20px;
+    font-family: Whitney, ‘Helvetica Neue’, Helvetica, Arial, sans-serif;
+}
+
+
+
+/* -----------Stili header-------------- */
+
+.containerH{
+    background-color: rgb(255, 123, 0);
+    height: 50px; 
+    width: 100%;
+    position: relative;
+    margin: 0px 0px 50px 0px;
+}
+
+.containerH .collU { 
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    right: 90%;
+}
+
+.containerH .collD { 
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    right: 80%;
+}
+
+.containerH .collB { 
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    right: 70%;
+}
+
+.containerH .logo {  
+    right: 50%;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+}
+
+.logo img {
+    width: 100px;
+}
+.containerH .IconUp{
+    right: 10%;
+    color: white;
+    text-align: left;
+    padding-top: 10px;
+    position: absolute;
+}
+/* -----------Stili main-------------- */
+
+.containerM {
+    display: flex;
+    flex-direction: row;
+    align-content: start;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.col {
+
+    width: calc(100% / 3);
+    padding: 20px;
+    flex-basis:10%; 
+}
+
+.img_mag {
+    position: relative;
+}
+
+.img_mag .Img1 {
+    width: 350px;
+    height: 500px;
+    background: url("../img/1.webp")no-repeat;   
+    background-size: contain;
+}
+
+.img_mag .label1T {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+}
+
+.img_mag .label2T {
+    position: absolute;
+    bottom: 50px;
+    left: 38px;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+}
+
+.img_mag .Img1 .fa-heart {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+}
+
+.img_mag:hover .Img1 {
+    background: url("../img/1b.webp") no-repeat;
+    width: 350px;
+    height: 500px;
+    background-size: contain;
+    position: relative;
+}
+
+ .img_mag:hover .fa-heart {
+    color: red;
+} 
