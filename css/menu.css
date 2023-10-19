@@ -130,21 +130,21 @@
 /* ----------------------------------------- */
 
 .img_mag .Textimg {
-    position: relative;
+    position: absolute;
     bottom: 50px;
     color: white;
     font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
 }
 
 .img_mag .label1T {
-    position: absolute;
-    left: 0;
+    
     background-color: red;
 }
 
 .img_mag .label2T {
-    position: absolute;
-    left: 38px;
+   
     background-color: green;
 }
 
