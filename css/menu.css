@@ -93,15 +93,12 @@
     align-content: start;
     flex-wrap:wrap;
     justify-content: center;
-    padding-top: 50px;
-    padding-left: 150px;
-    
+    padding-top: 100px;
 }
 
 .col {
-    width: calc((100% / 3) - 40px);
-    margin: 10px;
-    background-color: red;
+    width: calc((100% / 3) - 10px);
+    margin: 0px 5px;
     width: 500px;
 }
 
@@ -149,9 +146,10 @@
 }
 
 
-.img_mag .Img1 .fa-heart {
+/* cuore */
+.img_mag .fa-heart {
     position: absolute;
-    top: 30px;
+    top: 50px;
     right: 0px;
     background-color: white;
     color: black;
@@ -164,4 +162,13 @@
 
 .col .label3T {
     font-size: 15px;
+}
+
+.col .label3T .number{
+    color: red;
+    display: inline;
+}
+
+.col .label3T .pippo {
+    display: inline;
 }
