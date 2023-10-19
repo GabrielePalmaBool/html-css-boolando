@@ -98,10 +98,11 @@
 
 .col {
     width: calc((100% / 3) - 10px);
-    margin: 0px 5px;
+    margin: 10px 5px;
     width: 500px;
 }
 
+/* ---------------------------- Gestione Hover IMMAGINE------------------------------------ */
 .img_mag {
     position: relative;
 }
@@ -125,6 +126,8 @@
 .img_mag:hover .sec_img{
     display: inline-block;
 }
+
+/* ----------------------------------------- */
 
 .img_mag .Textimg {
     position: relative;
@@ -160,15 +163,15 @@
     color: red;
 } 
 
-.col .label3T {
+.col .ImgText {
     font-size: 15px;
 }
 
-.col .label3T .number{
+.col .ImgText .number{
     color: red;
     display: inline;
 }
 
-.col .label3T .pippo {
+.col .ImgText .pippo {
     display: inline;
 }
