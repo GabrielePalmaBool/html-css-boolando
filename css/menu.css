@@ -18,7 +18,8 @@
     background-color: rgb(255, 123, 0);
     height: 50px; 
     width: 100%;
-    position: relative;
+    position: fixed;
+    z-index: 1;
     margin: 0px 0px 50px 0px;
 }
 
@@ -28,9 +29,13 @@
     text-decoration: none;
     text-align: center;
     padding-top: 10px;
-    position: absolute;
+    position: fixed;
     right: 90%;
 }
+
+.containerH .collU:active {
+    color: black;
+  }
 
 .containerH .collD { 
     color: white;
@@ -38,9 +43,13 @@
     text-decoration: none;
     text-align: center;
     padding-top: 10px;
-    position: absolute;
+    position: fixed;
     right: 80%;
 }
+
+.containerH .collD:active {
+    color: black;
+  }
 
 .containerH .collB { 
     color: white;
@@ -48,16 +57,20 @@
     text-decoration: none;
     text-align: center;
     padding-top: 10px;
-    position: absolute;
+    position: fixed;
     right: 70%;
 }
+
+.containerH .collB:active {
+    color: black;
+  }
 
 .containerH .logo {  
     right: 50%;
     color: white;
     text-align: center;
     padding-top: 10px;
-    position: absolute;
+    position: fixed;
 }
 
 .logo img {
@@ -68,8 +81,10 @@
     color: white;
     text-align: left;
     padding-top: 10px;
-    position: absolute;
+    position: fixed;
 }
+
+
 /* -----------Stili main-------------- */
 
 .containerM {
@@ -78,43 +93,61 @@
     align-content: start;
     flex-wrap:wrap;
     justify-content: center;
+    padding-top: 50px;
+    padding-left: 150px;
+    
 }
 
 .col {
-
-    width: calc(100% / 3);
-    padding: 20px;
-    flex-basis:10%; 
+    width: calc((100% / 3) - 40px);
+    margin: 10px;
+    background-color: red;
+    width: 500px;
 }
 
 .img_mag {
     position: relative;
 }
 
-.img_mag .Img1 {
-    width: 350px;
-    height: 500px;
-    background: url("../img/1.webp")no-repeat;   
-    background-size: contain;
+.img_mag img {
+    width: 100%;
+}
+
+.img_mag .main_image {
+    display: inline-block;
+}
+
+.img_mag .sec_img {
+    display: none;
+}
+
+.img_mag:hover .main_image{
+    display: none;
+}
+
+.img_mag:hover .sec_img{
+    display: inline-block;
+}
+
+.img_mag .Textimg {
+    position: relative;
+    bottom: 50px;
+    color: white;
+    font-size: 15px;
 }
 
 .img_mag .label1T {
     position: absolute;
-    bottom: 50px;
     left: 0;
     background-color: red;
-    color: white;
-    font-size: 15px;
 }
 
 .img_mag .label2T {
     position: absolute;
-    bottom: 50px;
     left: 38px;
     background-color: green;
-    color: white;
-    font-size: 15px;
 }
+
 
 .img_mag .Img1 .fa-heart {
     position: absolute;
@@ -125,14 +158,10 @@
     font-size: 30px;
 }
 
-.img_mag:hover .Img1 {
-    background: url("../img/1b.webp") no-repeat;
-    width: 350px;
-    height: 500px;
-    background-size: contain;
-    position: relative;
-}
-
  .img_mag:hover .fa-heart {
     color: red;
 } 
+
+.col .label3T {
+    font-size: 15px;
+}
