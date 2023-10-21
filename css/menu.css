@@ -135,7 +135,6 @@
     color: white;
     font-size: 15px;
     font-weight: bold;
-    padding: 5px 10px;
 }
 
 .img_mag .label1T {
@@ -184,13 +183,22 @@
     height: 70px;
     background-color: rgb(70, 70, 70);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.ContainerF .logo {
+.left {
+    flex-basis: 50%;
+}
+
+.right {
+    flex-basis: 50%;
+}
+ 
+.titleF {
     color: white;
-    font-size: 25px;
-    padding-top: 10px;
+    font-size: 20px;
+    margin-left: 20%;
 }
 
 li {
@@ -203,6 +211,12 @@ li a {
     text-decoration: none;
 }
 
-.ContainerF .info {
+.logo {
+    color: white;
+    font-size: 15px;
+    margin-left: 65%;
+}
 
+.logo li i {
+    font-size: 20px;
 }
